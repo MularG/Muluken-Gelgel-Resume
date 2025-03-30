@@ -1,0 +1,75 @@
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  padding: 20px;
+  border-right: 1px solid #d0d7de;
+  background-color: #ffffff;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+.user-info {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d0d7de;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #24292f;
+}
+
+.user-title {
+  color: #57606a;
+  font-size: 16px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-link {
+  padding: 8px 12px;
+  color: #24292f;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-icon {
+  font-size: 16px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.sidebar-link:hover {
+  background-color: #f6f8fa;
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  background-color: #f6f8fa;
+  font-weight: 600;
+  color: #0969da;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid #d0d7de;
+  }
+}

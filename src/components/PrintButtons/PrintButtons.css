@@ -1,0 +1,66 @@
+.print-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.print-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.print-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-btn {
+  background-color: #2da44e;
+  color: white;
+}
+
+.word-btn {
+  background-color: #0969da;
+  color: white;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Print styles */
+@media print {
+  .print-buttons,
+  .sidebar,
+  .github-header {
+    display: none !important;
+  }
+  
+  .app {
+    display: block !important;
+  }
+  
+  .content-container {
+    display: block !important;
+  }
+  
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

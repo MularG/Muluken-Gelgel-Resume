@@ -1,0 +1,5 @@
+name = "muluken-gelgel-resume"
+compatibility_date = "2025-03-30"
+
+[site]
+bucket = "./build"

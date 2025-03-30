@@ -1,0 +1,63 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+  padding: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+}
+
+.edu-period {
+  color: #57606a;
+  font-size: 0.9rem;
+}
+
+.edu-content h3 {
+  color: #24292f;
+  margin: 0 0 0.5rem 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.institution-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-weight: 500;
+  color: #0969da;
+}
+
+.location {
+  color: #57606a;
+}
+
+.description {
+  color: #57606a;
+  line-height: 1.5;
+}
+
+.certifications-header {
+  color: #24292f;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d0d7de;
+}
+
+@media (max-width: 768px) {
+  .education-item {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #f6f8fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.content-container {
+  display: flex;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* GitHub-style cards */
+.github-card {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  color: #24292f;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #d8dee4;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* GitHub-style tags */
+.tag {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  background-color: #ddf4ff;
+  color: #0969da;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.tag-green {
+  background-color: #dafbe1;
+  color: #1a7f37;
+}
+
+.tag-yellow {
+  background-color: #fff8c5;
+  color: #9a6700;
+}
+
+@media print {
+  .app {
+    background-color: white !important;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .github-card {
+    break-inside: avoid;
+    border: none;
+    box-shadow: none;
   }
 }
